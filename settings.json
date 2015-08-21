@@ -1,0 +1,12 @@
+{
+	"botname": "funbunbot",
+	"key": "",
+	"secret": "",
+	
+  "payout": {
+  	"currency": "BUN",
+  	"amt": 1000
+  }
+}
+
+
