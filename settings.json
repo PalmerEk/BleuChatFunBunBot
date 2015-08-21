@@ -5,7 +5,9 @@
 	
   "payout": {
   	"currency": "BUN",
-  	"amt": 1000
+  	"amt": 1000,
+  	"amtVoter": 100,
+  	"amtRoyalty": 100
   }
 }
 

@@ -38,5 +38,14 @@ module.exports =  {
         callback = callback || function () {};
 
         this.jokes.findOne({_id: id}, callback);
+    },
+
+    getRandomJoke: function(callback) {
+        callback = callback || function () {};
+
+        this.jokes.find({$not: {punchline: null}}, function(err, jokes) {
+            var jokeNumber = Math.floor(Math.random()*jokes.length)
+            return callback(null, jokes[jokeNumber]);
+        });
     }
 }
